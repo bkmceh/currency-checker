@@ -24,9 +24,10 @@ public class CurrencyCheckerController {
         this.currencyCheckerService = currencyCheckerService;
     }
 
-    @GetMapping(value = "/{code}", produces = MediaType.IMAGE_GIF_VALUE)
+    @GetMapping(value ={ "", "/{code}"},
+            produces = MediaType.IMAGE_GIF_VALUE)
     public ResponseEntity<byte[]> getResult(@PathVariable(required = false) String code) {
-        return code.isEmpty()
+        return code == null
                 ? ResponseEntity.ok(currencyCheckerService.checkCurrency(currencyCode))
                 : ResponseEntity.ok(currencyCheckerService.checkCurrency(code));
     }
