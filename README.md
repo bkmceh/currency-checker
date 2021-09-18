@@ -3,8 +3,8 @@
 ## 💾 Information
 
 ### ❓ What does the program do?
-Get the request on `http://localhost:8080/api/currency`
-Check the value of currency and return the gif of 1 of the two types (rich or broke).
+Receives the request on `http://localhost:8080/api/currency`<br>
+Checks the value of currency and return the gif of 1 of the two types (rich or broke).
 
 By default checking USD currency. 
 
@@ -17,13 +17,18 @@ For finding gif is used `https://developers.giphy.com/docs/api`
 
 For checking value of currency is used `https://docs.openexchangerates.org`
 
-### ❓ What is meaning check currency?
-Service send the GET request on Open Exchanger API 
-and check the rate of currency по отношению to rubles.
-After that service check the difference between today and yesterday's values.
+### ❓ What is meaning checking currency?
+Service sends the GET request on Open Exchanger API 
+and checks the rate of currency in relation to ruble. <br>
+After that service checks the difference between today and yesterday's values.
 ### ❓ What the gif is returning?
 
-Service send the GET request on Giphy API and can return 2 types of gifs:
+Service sends the GET request on Giphy API and can return 2 types of gifs:
+- Rich gif. This is gifs which user search when type "Rich"
+- Broke gif. This is gifs which user search when type "Broke"
+
+If the value of currency today in more than yesterday, you will get Rich gif. <br>
+Otherwise Broke gif (cause if even the today's value is the same as yesterday, you will not earn any money and only waste time, and time is money haha)
 
 
 ## 📝 How to run
