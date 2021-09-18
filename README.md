@@ -16,7 +16,7 @@ Example: `http://localhost:8080/api/currency/usd`.
 
 [Giphy](https://developers.giphy.com/docs/api) used for searching gifs.
 
-For retrieving changing rate of currency used `https://docs.openexchangerates.org`
+[Open Exchange](`https://docs.openexchangerates.org`) used for retrieving changing rate of currency.
 
 ### ❓ What does it mean checking currency?
 
