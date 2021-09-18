@@ -2,7 +2,7 @@ package inforest.currencychecker.model.gif;
 
 import com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormat;
 import feign.RequestLine;
-import inforest.currencychecker.model.gif.dto.mapper.WrapperGifInfo;
+import inforest.currencychecker.model.gif.dto.WrapperGifInfo;
 
 public interface GifClient {
     @RequestLine("GET")

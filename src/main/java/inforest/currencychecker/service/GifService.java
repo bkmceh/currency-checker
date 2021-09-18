@@ -25,7 +25,7 @@ public class GifService {
     @Value("${limit.gif}")
     private String gifNum;
 
-    public byte[] getGifThroughAPI(final String searchQuery) {
+    public byte[] getGif(final String searchQuery) {
         byte[] data;
         GifClient client = Feign.builder()
                 .client(new OkHttpClient())

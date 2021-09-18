@@ -1,4 +1,4 @@
-package inforest.currencychecker.model.gif.dto.mapper;
+package inforest.currencychecker.model.gif.dto;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

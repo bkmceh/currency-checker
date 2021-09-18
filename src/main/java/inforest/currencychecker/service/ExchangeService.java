@@ -24,9 +24,7 @@ public class ExchangeService {
     private String historicalURLEnd;
 
     public boolean isRateHigher(final String code) {
-        Double currentValueRUB = getCurrentValue(code);
-        Double yesterdayValueRUB = getYesterdayValue(code);
-        return currentValueRUB > yesterdayValueRUB;
+        return getCurrentValue(code) > getYesterdayValue(code);
     }
 
     private Double getCurrentValue(final String code) {
